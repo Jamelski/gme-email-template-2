@@ -1,0 +1,411 @@
+<!doctype html>
+<html style="margin: 0;padding: 0;">
+<head style="margin: 0;padding: 0;">
+<meta charset="UTF-8" style="margin: 0;padding: 0;">
+<meta name="viewport" content="initial-scale=1" style="margin: 0;padding: 0;">
+<title style="margin: 0;padding: 0;">Untitled Document</title>
+<style style="margin: 0;padding: 0;">
+* {
+	margin: 0;
+	padding: 0;
+}
+* img {
+	vertical-align: bottom;
+}
+div {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Optima", Arial, sans-serif;/*border-style:dotted;
+	border-width:1px;
+	border-color:#000000;*/
+}
+@media screen and (max-width: 480px){
+#wrapper {
+	width: 100% !important;
+        max-width: 100% !important;
+}
+#banner {
+	max-height: 390px !important;
+	width:100% !important;
+	height:auto !important;
+}
+#banner img {
+	width: 100% !important;
+	max-height:none !important;
+}
+a[id=more-information-link] {
+	 font-size: 26px !important;
+}
+div[id=title] {
+	min-height: 125px !important;
+	background-color: #0077C1 !important;
+	color: #ffffff !important;
+	padding-top: 15px !important;
+	font-size: 2.5em !important;
+	text-align: center !important;
+	width:100% !important;
+	height:auto !important;
+}
+div[id=subtitle] {
+	min-height: 95px !important;
+	text-align: center !important;
+	background-color: #FFFFFF !important;
+	padding-top: 15px !important;
+	float:left !important;
+}
+div[id=subtitle] h2[id=left] {
+	font-size: 1.5em !important;
+	color: #6B6B6B !important;
+	font-weight: normal !important;
+	width:100% !important;
+}
+div[id=subtitle] h2[id=right] {
+	font-size: 1.5em !important;
+	color: #6B6B6B !important;
+	font-weight: normal !important;
+	width: 100% !important;
+}
+div[id=sponser-title] {
+	min-height: 35px !important;
+	text-align: center !important;
+	font-size: 24px !important;
+	color: #0077C1 !important;
+	background-color: #FFFFFF !important;
+	padding-top: 15px !important;
+	width:100% !important;
+	padding-left:0 !important;
+}
+div[id=sponsor-logos] {
+	background-color: #FFFFFF !important;
+	width: 100% !important;
+}
+div[id=sponsor-logos] img[id="sponsor-logos-image"] {
+	width: 70% !important;
+	padding-left: 15% !important;
+	padding-right: 15% !important;
+}
+div[id=content-title] {
+	min-height: 205px !important;
+	font-size: 36px !important;
+	color: #0077C1 !important;
+	background-color: #FFFFFF !important;
+	padding-top: 50px !important;
+	padding-bottom: 50px !important;
+	padding-left: 5% !important;
+	padding-right: 15% !important;
+	width: 80% !important;
+}
+div[id=content-body] {
+	min-height: 400px !important;
+	font-size: 24px !important;
+	background-color: #FFFFFF !important;
+	padding-left: 5% !important;
+	padding-right: 15% !important;
+	width: 80% !important;
+}
+#content-body p {
+	line-min-height: 1.3em !important;
+	margin-bottom: 15px !important;
+}
+div[id=more-information] {
+	min-height: 260px !important;
+	font-size: 2.3em !important;
+	background-color: #FFFFFF !important;
+}
+div[id=more-information] div[id=more-information-background] {
+	width: 80% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-top: 75px !important;
+	position: relative !important;
+}
+div[id=more-information] a[id=more-information-link] {
+	color: #FFFFFF !important;
+	text-decoration: none !important;
+	background-color: #0077C1 !important;
+	max-width: 445px !important;
+	min-width: 78% !important;
+	min-height: 55px !important;
+	position: absolute !important;
+	margin-left: 3px !important;
+	margin-top: 3px !important;
+	text-align: center !important;
+	padding-top: 20px !important;
+}
+div[id=social-media] {
+	min-height: 100px !important;
+	text-align: center !important;
+	font-size: 30px !important;
+	color: #0077C1 !important;
+	padding-top: 25px !important;
+	width:100% !important;
+}
+div[id=social-media] img[id=smi-1] {
+	float: left !important;
+	margin-right: 25px !important;
+	width:50px !important;
+}
+div[id=social-media] img[id=smi-2] {
+	float: left !important;
+	margin-right: 25px !important;
+	width:50px !important;
+}
+div[id=social-media] img[id=smi-3] {
+	float: left !important;
+	margin-right: 25px !important;
+	width:50px !important;
+}
+div[id=social-media] img[id=smi-4] {
+	float: left !important;
+	margin-right: 25px !important;
+	width:50px !important;
+}
+#social-media img:first-child {
+	margin-left: 0px !important;
+}
+#social-media img:last-child {
+	margin-right: 0px !important;
+}
+div[id=social-images] {
+	width: 275px !important;
+	float:none !important;
+}
+div[id=location] {
+	min-height: 125px !important;
+	font-size: 24px !important;
+	width:100% !important;
+	float:none !important;
+	width:90% !important;
+}
+#location-title {
+	font-weight: bold !important;
+}
+#location #location-title, #location #street, #location #city, #location img {
+	float: left !important;
+	width: auto !important;
+}
+div[id=location-info] {
+	width: 300px !important;
+	min-height: auto !important;
+	float: left !important;
+	margin-top: 30px !important;
+}
+div[id=location] img[id=location-image] {
+	margin-top: 30px !important;
+}
+#location-block {
+	width: 375px !important;
+	height: auto !important;
+	overflow: auto !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+div[id=unsubscribe] {
+	min-height: 45px !important;
+	text-align: center !important;
+	padding-top: 35px !important;
+	color: #CCCCCC !important;
+}
+#unsubscribe a {
+	text-decoration: none !important;
+	color: #0077C1 !important;
+}
+}
+ @media screen and (min-width: 480px) {
+div[id=wrapper] {
+	max-width: 600px;
+}
+div[id=banner] {
+	float: left;
+	/*width:235px;*/
+	width: 39.16%;
+	height: 144px;
+}
+div[id=banner] img[id=banner-image] {
+	height: 100%;
+}
+div[id=title] {
+	float: left;
+	/*width:365px;*/
+	width: 60.83%;
+	height: 114px;
+	min-height: 114px;
+	padding: 0;
+	padding-top: 30px;
+	font-size: 2.5em;
+}
+
+
+div[id=subtitle] {
+	min-height: 65px;
+	padding-top: 0;
+	float: left;
+}
+div[id=subtitle] h2[id=left] {
+	width: 35%;
+	margin-left: 5%;
+	float: left;
+	font-size: 18px;
+	margin-top: 25px;
+}
+div[id=subtitle] h2[id=right] {
+	width: 50%;
+	margin-right: 10%;
+	float: left;
+	font-size: 18px;
+	margin-top: 25px;
+}
+div[id=sponser-title] {
+	font-size: 14px;
+	float: left;
+	width: 35%;
+	padding-left: 10%;
+}
+div[id=sponsor-logos] {
+	float: left;
+	width: 50%;
+}
+div[id=sponsor-logos] img[id="sponsor-logos-image"] {
+	width: 90%;
+	padding-right: 10%;
+	padding-left: 0;
+}
+div[id=content-title] {
+	min-height: 25px;
+	font-size: 29px;
+	color: #0077C1;
+	background-color: #FFFFFF;
+	padding-top: 25px;
+	/* padding-bottom: 50px; */
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	width: 95%;
+	float: left;
+}
+div[id=content-body] {
+	font-size: 18px;
+	float: left;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	width: 95%;
+	min-height: 201px;
+}
+div[id=more-information] div[id=more-information-background] {
+	max-width: 400px;
+	min-width: 260px;
+	min-height: 60px;
+	width: 41%;
+	margin-top: 25px;
+}
+div[id=more-information] a[id=more-information-link] {
+	max-width: 257px;
+	min-height: 39px;
+	min-width: 250px;
+	padding-top: 15px;
+	font-size: 22px;
+}
+div[id=more-information] {
+	float: left;
+	min-height: 100px;
+}
+div[id=social-media] {
+	float: left;
+	font-size: 18px;
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+div[id=social-media] img[id=smi-1] {
+	width: 30px;
+	margin-right: 18px;
+}
+div[id=social-media] img[id=smi-2] {
+	width: 30px;
+	margin-right: 18px;
+}
+div[id=social-media] img[id=smi-3] {
+	width: 30px;
+	margin-right: 18px;
+}
+div[id=social-media] img[id=smi-4] {
+	width: 30px;
+	margin-right: 0;
+}
+div[id=social-images] {
+	overflow: auto;
+	width: 180px;
+	float: right;
+}
+div[id=location] {
+	float: left;
+	font-size: 14px;
+	width: 50%;
+}
+div[id=location-info] {
+	margin-top: 25px;
+}
+div[id=location] img[id=location-image] {
+	float: left;
+	margin-top: 22px;
+	width: 50px;
+}
+div[id=street] {
+	clear: left;
+}
+div[id=city] {
+	clear: left;
+}
+div[id=unsubscribe] {
+	float: left;
+	font-size: 12px;
+}
+</style>
+</head>
+<body style="margin: 0;padding: 0;">
+<div id="wrapper" style="margin: 0;padding: 0;width: 100%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;min-height: auto; max-width: 640px;">
+  <div id="banner" style="margin: 0;padding: 0;width: 39.16%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;float: left;height: 144px;max-height: 390px;"><img id="banner-image" src="http://static.sendgrid.com/uploads/UID_235822_NL_6078124_fee51e6b092b05c73e03e023de9e9131/aa16875e52c63a9a22e814221b995363" alt="" style="margin: 0;padding: 0;vertical-align: bottom;height: 100%;width: 100%; min-height:144px; max-height:144px"></div>
+  <div id="title" style="margin: 0;padding: 0;width: 60.83%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;min-height: 114px;background-color: #0077C1;color: #ffffff;padding-top: 30px;font-size: 2.5em;text-align: center;float: left;height: 114px;">
+    <p style="margin: 0;padding: 0;">Mood Disorders</p>
+    <p style="margin: 0;padding: 0;">Summit</p>
+  </div>
+  <!--End of Title-->
+  <div id="subtitle" style="margin: 0;padding: 0;width: 100%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;min-height: 95px;text-align: center;background-color: #FFFFFF;padding-top: 15px;">
+    <h2 id="left" style="margin: 0;padding: 0;font-size: 18px;color: #6B6B6B;font-weight: normal;width: 35%;margin-left: 5%;float: left;margin-top: 25px;">December 11-12, 2015</h2>
+    <h2 id="right" style="margin: 0;padding: 0;font-size: 18px;color: #6B6B6B;font-weight: normal;width: 50%;margin-right: 10%;float: left;margin-top: 25px;">J.W. Marriott Camelback Inn, Scottsdale, Arizona</h2>
+  </div>
+  <!--End of Subtitle-->
+  <div id="sponser-title" style="margin: 0;padding: 0;width: 35%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;min-height: 35px;text-align: center;font-size: 14px;color: #0077C1;background-color: #FFFFFF;padding-top: 15px;float: left;padding-left: 10%;">
+    <p style="margin: 0;padding: 0;">Jointly Sponsored/Co-Provided By:</p>
+  </div>
+  <!--End of Sponsor Title-->
+  <div id="sponsor-logos" style="margin: 0;padding: 0;width: 50%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;background-color: #FFFFFF;float: left;"><img id="sponsor-logos-image" src="http://static.sendgrid.com/uploads/UID_235822_NL_6078124_fee51e6b092b05c73e03e023de9e9131/0ce7f642686921b86dbaa7a34e0f8a27" alt="" style="margin: 0;padding: 0;vertical-align: bottom;width: 90%;padding-left: 0;padding-right: 10%;"></div>
+  <div id="content-title" style="margin: 0;padding: 0;width: 95%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;min-height: 25px;font-size: 29px;color: #0077C1;background-color: #FFFFFF;padding-top: 25px;padding-bottom: 50px;padding-left: 2.5%;padding-right: 2.5%;float: left;">This copy is not intended to be read. This copy isn't inteded to be read.</div>
+  <!--End of Content Title-->
+  <div id="content-body" style="margin: 0;padding: 0;width: 95%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;min-height: 201px;font-size: 18px;background-color: #FFFFFF;padding-left: 2.5%;padding-right: 2.5%;float: left;">
+    <p style="margin: 0;padding: 0;line-min-height: 1.3em;margin-bottom: 15px;">It is merely a representation of what the text of this piece may look like set in this type size and style. The criteria for quality typography have not changed with the application of comptuters and state of the art technology.</p>
+    <p style="margin: 0;padding: 0;line-min-height: 1.3em;margin-bottom: 15px;">Legibility, image clarity, consistent letter and word spacing, character design and layout remain the basic qualitites by which we judge typography. This copy is not intended to be read. It is merely a representation of what the text of this type size and style. The criteria for quality typography have not changed with the application of computers and state of the art technology. Legibility, image clarity, consistent letter and word spacing, character design and layout.</p>
+  </div>
+  <div id="more-information" style="margin: 0;padding: 0;width: 100%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;min-height: 100px;font-size: 36px;background-color: #FFFFFF;float: left;">
+    <div id="more-information-background" style="margin: 0;padding: 0;width: 41%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;margin-top: 25px;position: relative;min-width: 260px;"><a id="more-information-link" style="margin: 0;padding: 0;color: #FFFFFF;text-decoration: none;background-color: #0077C1;width: 98%;max-width: 257px;min-width: 250px;min-height: 39px;position: absolute;text-align: center;padding-top: 15px;font-size: 20px;   border: solid #e2ddd9 3px; padding: 10px;">Get More Information >></a></div>
+  </div>
+  <div id="social-media" style="margin: 0;padding: 0;width: 50%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;min-height: 100px;text-align: right;font-size: 18px;color: #0077C1;padding-top: 25px;float: right;">
+    <p style="margin: 0;padding: 0;">CONNECT WITH GME</p>
+    <div id="social-images" style="margin: 0;padding: 0;width: 180px;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;overflow: auto;float: right;"><img id="smi-1" src="http://static.sendgrid.com/uploads/UID_235822_NL_6078124_fee51e6b092b05c73e03e023de9e9131/d891ec8f6c699d387ebe4c289a33523c" alt="" style="margin: 0;padding: 0;vertical-align: bottom;float: left;margin-right: 18px;width: 30px;margin-left: 0px;"> <img id="smi-2" src="http://static.sendgrid.com/uploads/UID_235822_NL_6078124_fee51e6b092b05c73e03e023de9e9131/ebf8a610ce706427b5e65ec100064202" alt="" style="margin: 0;padding: 0;vertical-align: bottom;float: left;margin-right: 18px;width: 30px;"> <img id="smi-3" src="http://static.sendgrid.com/uploads/UID_235822_NL_6078124_fee51e6b092b05c73e03e023de9e9131/571fbd0513c736d120b2d817d2fd35d1" alt="" style="margin: 0;padding: 0;vertical-align: bottom;float: left;margin-right: 18px;width: 30px;"> <img id="smi-4" src="http://static.sendgrid.com/uploads/UID_235822_NL_6078124_fee51e6b092b05c73e03e023de9e9131/e69d9e917ea0dd95bd699b12ff41899b" alt="" style="margin: 0;padding: 0;vertical-align: bottom;float: left;margin-right: 0px;width: 30px;"></div>
+    <!--End of Social Images--></div>
+  <div id="location" style="margin: 0;padding: 0;width: 50%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;min-height: 125px;font-size: 14px;float: left;">
+    <div id="location-block" style="margin: 0;padding: 0;width: 375px;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;height: auto;overflow: auto;"><img id="location-image" src="http://static.sendgrid.com/uploads/UID_235822_NL_6078124_fee51e6b092b05c73e03e023de9e9131/02f0e3648cd8f1cb837588a42091dc82" alt="" style="margin: 0;padding: 0;vertical-align: bottom;margin-top: 22px;float: left;width: auto;">
+      <div id="location-info" style="margin: 0;padding: 0;width: 300px;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;min-height: auto;float: left;margin-top: 25px;">
+        <div id="location-title" style="margin: 0;padding: 0;width: auto;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;font-weight: bold;float: left;">Global Medical Education</div>
+        <div id="street" style="margin: 0;padding: 0;width: auto;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;clear: left;float: left;">26 East 63rd Street</div>
+        <div id="city" style="margin: 0;padding: 0;width: auto;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;clear: left;float: left;">New York, NY 10065</div>
+      </div>
+    </div>
+    <!--End of Location Block--></div>
+  <div id="unsubscribe" style="margin: 0;padding: 0;width: 100%;margin-left: auto;margin-right: auto;font-family: &quot;Optima&quot;, Arial, sans-serif;min-height: 45px;text-align: center;padding-top: 35px;color: #CCCCCC;float: left;font-size: 12px;">
+    <p style="margin: 0;padding: 0;">To unsubscribe, please <a style="margin: 0;padding: 0;text-decoration: none;color: #0077C1;">Click Here</a></p>
+  </div>
+</div>
+<!--End of Wrapper-->
+</body>
+</html>
